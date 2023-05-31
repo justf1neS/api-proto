@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package api;
+
+service ApiService {
+
+    rpc Hello (HelloReq) returns (HelloRes) {}
+}
+
+message HelloReq {
+    string str = 1;
+}
+
+message HelloRes{
+    string str = 1;
+}
